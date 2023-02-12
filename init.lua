@@ -1,3 +1,5 @@
 require "gdog.options"
 require "gdog.keymaps"
 require "gdog.plugins"
+require "gdog.cmp"
+require "gdog.colorscheme"
