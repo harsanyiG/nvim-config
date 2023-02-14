@@ -45,6 +45,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use 'folke/tokyonight.nvim' -- Tokyo Night colorscheme
+  use "windwp/nvim-autopairs"
 
 
   -- cmp plugins
@@ -68,6 +69,15 @@ return packer.startup(function(use)
     -- Telescope
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
+
+    -- Comment
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use {
+      'numToStr/Comment.nvim',
+          config = function()
+                require('Comment').setup()
+            end
+        }
 
   use {
     "nvim-treesitter/nvim-treesitter",
