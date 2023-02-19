@@ -40,6 +40,7 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
+	-- TODO: Add cool greet plug like alpha
 	-- My plugins here
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
@@ -93,12 +94,17 @@ return packer.startup(function(use)
 	use("akinsho/bufferline.nvim")
 	use("moll/vim-bbye")
 
-  -- lua line
+	-- lua line
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 
+	-- indent line
+	use("lukas-reineke/indent-blankline.nvim")
+
+	-- help stuff
+	use("folke/which-key.nvim")
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
