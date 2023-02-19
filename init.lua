@@ -1,12 +1,13 @@
-require "gdog.options"
-require "gdog.keymaps"
-require "gdog.plugins"
-require "gdog.cmp"
-require "gdog.colorscheme"
-require "gdog.lsp"
-require "gdog.telescope"
-require "gdog.treesitter"
-require "gdog.autopairs"
-require "gdog.gitsigns"
-require "gdog.nvim-tree"
-require "gdog.bufferline"
+require("gdog.options")
+require("gdog.keymaps")
+require("gdog.plugins")
+require("gdog.cmp")
+require("gdog.colorscheme")
+require("gdog.lsp")
+require("gdog.telescope")
+require("gdog.treesitter")
+require("gdog.autopairs")
+require("gdog.gitsigns")
+require("gdog.nvim-tree")
+require("gdog.bufferline")
+require("gdog.lualine")
